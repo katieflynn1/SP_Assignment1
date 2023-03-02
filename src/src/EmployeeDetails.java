@@ -144,7 +144,7 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 
 		return menuBar;
 	}// end menuBar
-
+	
 	// initialize search panel
 	private JPanel searchPanel() {
 		JPanel searchPanel = new JPanel(new MigLayout());

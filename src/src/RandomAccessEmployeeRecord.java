@@ -80,4 +80,5 @@ public class RandomAccessEmployeeRecord extends Employee
       buffer.setLength( 20 );
       file.writeChars( buffer.toString() );
    } // end writeName
+
 } // end class RandomAccessEmployeeRecord

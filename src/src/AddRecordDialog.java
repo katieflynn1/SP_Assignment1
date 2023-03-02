@@ -1,14 +1,14 @@
 package src;
-/*
- * 
- * This is a dialog for adding new Employees and saving records to file
- * 
- * */
+
+ // This is a dialog for adding new Employees and saving records to file
 
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.Container;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Arrays;
+import java.util.List;
 
 import javax.swing.BorderFactory;
 import javax.swing.JButton;
