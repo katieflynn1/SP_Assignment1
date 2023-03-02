@@ -23,6 +23,8 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
 import java.text.DecimalFormat;
+import java.util.Collection;
+import java.util.List;
 import java.util.Random;
 import java.util.Vector;
 
@@ -432,7 +434,7 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 	}// end lastRecord
 
 	// search Employee by ID
-	public void searchEmployeeById() {
+	public List<Employee> searchEmployeeById() {
 		boolean found = false;
 
 		try {// try to read correct correct from input
@@ -474,6 +476,7 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 		} // end catch
 		searchByIdField.setBackground(Color.WHITE);
 		searchByIdField.setText("");
+		return null;
 	}// end searchEmployeeByID
 
 	// search Employee by surname
