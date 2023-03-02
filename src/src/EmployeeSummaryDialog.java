@@ -99,8 +99,6 @@ public class EmployeeSummaryDialog extends JDialog implements ActionListener {
 		columnNames.addElement("Full Time");
 
 		// Create the DefaultTableModel using the dataVector and columnNames
-		
-
 		// construnct table and choose table model for each column
 		tableModel = new DefaultTableModel(dataVector, columnNames) {
 			public Class getColumnClass(int c) {

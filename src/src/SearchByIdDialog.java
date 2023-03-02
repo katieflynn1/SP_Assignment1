@@ -87,13 +87,11 @@ public class SearchByIdDialog extends JDialog implements ActionListener, SearchD
         }
         return employees;
     }
-    
     // implementation of SearchDialog interface method
     @Override
     public void cancel() {
         dispose();
     }
-
     // implementation of ActionListener interface method
     public void actionPerformed(ActionEvent e) {
         // if option search, search for Employee
@@ -103,7 +101,6 @@ public class SearchByIdDialog extends JDialog implements ActionListener, SearchD
             cancel();
         }
     }
-
     // implementation of SearchDialog interface method
     @Override
     public String getSearchText() {
