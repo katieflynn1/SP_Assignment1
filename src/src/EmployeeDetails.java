@@ -717,8 +717,11 @@ public class EmployeeDetails extends JFrame implements ActionListener, ItemListe
 	// check for input in text fields
 	public boolean checkInput() {
 		boolean valid = true;
-		// if any of inputs are in wrong format, colour text field and display
-		// message
+		// if any of inputs are in wrong format, colour text field and display message
+		return inputChecking(valid);
+	}
+
+	private boolean inputChecking(boolean valid) {
 		if (ppsField.isEditable() && ppsField.getText().trim().isEmpty()) {
 			ppsField.setBackground(new Color(255, 150, 150));
 			valid = false;
