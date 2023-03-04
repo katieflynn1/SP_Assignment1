@@ -1,1 +1,1 @@
-"# SP_Assignment1" 
+Software Patterns Module: Assignment 1 (Refactoring)
