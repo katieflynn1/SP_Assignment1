@@ -148,6 +148,11 @@ public class AddRecordDialog extends JDialog implements ActionListener {
 	public boolean checkInput() {
 		boolean valid = true;
 		// if any of inputs are in wrong format, colour text field and display message
+		valid = inputChecking(valid);
+		return valid;
+	}// end checkInput
+
+	private boolean inputChecking(boolean valid) {
 		if (ppsField.getText().equals("")) {
 			ppsField.setBackground(new Color(255, 150, 150));
 			valid = false;
@@ -189,7 +194,7 @@ public class AddRecordDialog extends JDialog implements ActionListener {
 			valid = false;
 		}// end if
 		return valid;
-	}// end checkInput
+	}
 
 	// set text field to white colour
 	public void setToWhite() {
